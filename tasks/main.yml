@@ -37,4 +37,4 @@
     url: "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-Linux-x86_64"
     dest: /usr/local/bin/docker-compose
     mode: 0755
-  when: docker_compose_version is defined
+  when: docker_compose_version is defined and docker_compose_version != ""
